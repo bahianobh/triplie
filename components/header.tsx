@@ -23,13 +23,13 @@ export function Header() {
       <div className="bg-[#1B3C87] text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+5511999999999" className="flex items-center gap-2 hover:text-[#F5D547] transition-colors">
+            <a href="tel:+5531933005502" className="flex items-center gap-2 hover:text-[#F5D547] transition-colors">
               <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">(11) 99999-9999</span>
+              <span className="hidden sm:inline">(31) 93300-5502</span>
             </a>
-            <a href="mailto:contato@triplie.com.br" className="flex items-center gap-2 hover:text-[#F5D547] transition-colors">
+            <a href="mailto:triplieagenciadeturismo@gmail.com" className="flex items-center gap-2 hover:text-[#F5D547] transition-colors">
               <Mail className="h-4 w-4" />
-              <span className="hidden sm:inline">contato@triplie.com.br</span>
+              <span className="hidden sm:inline">triplieagenciadeturismo@gmail.com</span>
             </a>
           </div>
           <div className="text-xs sm:text-sm">
@@ -47,9 +47,9 @@ export function Header() {
               <Image
                 src="/images/logo-triplie.png"
                 alt="Tripliê - Agência de Turismo"
-                width={160}
-                height={60}
-                className="h-14 w-auto"
+                width={220}
+                height={80}
+                className="h-20 w-auto"
                 priority
               />
             </Link>
@@ -71,9 +71,12 @@ export function Header() {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button 
+                asChild
                 className="bg-[#F47920] hover:bg-[#d96810] text-white font-semibold px-6 py-2 rounded-full transition-all hover:scale-105"
               >
-                Solicitar Orçamento
+                <a href="https://wa.me/5531933005502" target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento
+                </a>
               </Button>
             </div>
 
@@ -102,9 +105,12 @@ export function Header() {
                   </Link>
                 ))}
                 <Button 
+                  asChild
                   className="bg-[#F47920] hover:bg-[#d96810] text-white font-semibold px-6 py-2 rounded-full mt-2"
                 >
-                  Solicitar Orçamento
+                  <a href="https://wa.me/5531933005502" target="_blank" rel="noopener noreferrer">
+                    Solicitar Orçamento
+                  </a>
                 </Button>
               </div>
             </div>

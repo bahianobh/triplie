@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Plane, Hotel, Ship, Car, Umbrella, FileCheck } from "lucide-react"
+import { Plane, Hotel, Car } from "lucide-react"
 
 const services = [
   {
@@ -16,24 +16,9 @@ const services = [
     description: "Hotéis, resorts e pousadas selecionados para garantir conforto e qualidade na sua estadia.",
   },
   {
-    icon: Ship,
-    title: "Cruzeiros",
-    description: "Embarque em experiências únicas pelos mares do Brasil e do mundo com os melhores navios.",
-  },
-  {
     icon: Car,
     title: "Aluguel de Carros",
     description: "Locação de veículos em qualquer destino para você explorar com liberdade e comodidade.",
-  },
-  {
-    icon: Umbrella,
-    title: "Seguro Viagem",
-    description: "Viaje com tranquilidade! Oferecemos as melhores coberturas para sua segurança.",
-  },
-  {
-    icon: FileCheck,
-    title: "Assessoria de Vistos",
-    description: "Auxiliamos em todo o processo de solicitação de vistos para diferentes países.",
   },
 ]
 

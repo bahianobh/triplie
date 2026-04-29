@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, Award, Users, Globe } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 
 const features = [
   "Atendimento personalizado e humanizado",
@@ -14,11 +14,7 @@ const features = [
   "Equipe especializada e experiente",
 ]
 
-const stats = [
-  { icon: Award, value: "10+", label: "Anos de experiência" },
-  { icon: Users, value: "5000+", label: "Clientes atendidos" },
-  { icon: Globe, value: "50+", label: "Países" },
-]
+
 
 export function About() {
   return (
@@ -35,18 +31,7 @@ export function About() {
                 className="object-cover"
               />
             </div>
-            {/* Floating card */}
-            <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-xl p-6 hidden md:block">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-[#F5D547] rounded-full flex items-center justify-center">
-                  <Award className="h-7 w-7 text-[#1B3C87]" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-[#1B3C87]">10+ Anos</div>
-                  <div className="text-muted-foreground text-sm">de experiência</div>
-                </div>
-              </div>
-            </div>
+
             {/* Decorative element */}
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#F47920] rounded-2xl -z-10" />
           </div>
@@ -77,20 +62,7 @@ export function About() {
               ))}
             </div>
 
-            {/* Stats */}
-            <div className="flex flex-wrap gap-8 mb-8 py-6 border-y border-border">
-              {stats.map((stat, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-[#1B3C87]/10 rounded-xl flex items-center justify-center">
-                    <stat.icon className="h-6 w-6 text-[#1B3C87]" />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-[#1B3C87]">{stat.value}</div>
-                    <div className="text-muted-foreground text-sm">{stat.label}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+
 
             <Button 
               size="lg"

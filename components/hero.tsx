@@ -55,28 +55,14 @@ export function Hero() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#1B3C87] font-semibold px-8 py-6 rounded-full text-lg transition-all"
+              className="border-2 border-white bg-white text-[#1B3C87] hover:bg-white/90 font-semibold px-8 py-6 rounded-full text-lg transition-all"
             >
               <Calendar className="mr-2 h-5 w-5" />
               Planejar Viagem
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#F5D547]">10+</div>
-              <div className="text-white/80 text-sm md:text-base">Anos de experiência</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#F5D547]">5000+</div>
-              <div className="text-white/80 text-sm md:text-base">Clientes satisfeitos</div>
-            </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#F5D547]">50+</div>
-              <div className="text-white/80 text-sm md:text-base">Países atendidos</div>
-            </div>
-          </div>
+
         </div>
       </div>
 
