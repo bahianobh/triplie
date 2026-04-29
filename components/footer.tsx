@@ -15,10 +15,7 @@ const quickLinks = [
 const services = [
   "Passagens Aéreas",
   "Hospedagem",
-  "Cruzeiros",
   "Aluguel de Carros",
-  "Seguro Viagem",
-  "Assessoria de Vistos",
 ]
 
 export function Footer() {
@@ -38,7 +35,7 @@ export function Footer() {
             />
             <p className="text-white/70 mb-6 leading-relaxed">
               Sua agência de turismo de confiança. Transformamos sonhos de viagem em 
-              experiências inesquecíveis há mais de 10 anos.
+              experiências inesquecíveis.
             </p>
             {/* Social links */}
             <div className="flex items-center gap-4">
@@ -101,14 +98,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#F47920] flex-shrink-0" />
-                <a href="tel:+5511999999999" className="text-white/70 hover:text-[#F5D547] transition-colors">
-                  (11) 99999-9999
+                <a href="tel:+5531933005502" className="text-white/70 hover:text-[#F5D547] transition-colors">
+                  (31) 93300-5502
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#F47920] flex-shrink-0" />
-                <a href="mailto:contato@triplie.com.br" className="text-white/70 hover:text-[#F5D547] transition-colors">
-                  contato@triplie.com.br
+                <a href="mailto:triplieagenciadeturismo@gmail.com" className="text-white/70 hover:text-[#F5D547] transition-colors">
+                  triplieagenciadeturismo@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
