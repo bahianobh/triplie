@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -130,12 +131,15 @@ export function Destinations() {
         {/* View all button */}
         <div className="text-center mt-12">
           <Button 
+            asChild
             size="lg"
             variant="outline"
             className="border-2 border-[#1B3C87] text-[#1B3C87] hover:bg-[#1B3C87] hover:text-white font-semibold px-8 rounded-full"
           >
-            Ver todos os destinos
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <Link href="/destinos">
+              Ver todos os destinos
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </div>
       </div>
