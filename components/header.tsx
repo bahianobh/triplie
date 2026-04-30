@@ -47,8 +47,8 @@ export function Header() {
               <Image
                 src="/images/logo-triplie.png"
                 alt="Tripliê - Agência de Turismo"
-                width={220}
-                height={80}
+                width={440}
+                height={160}
                 className="h-20 w-auto"
                 priority
               />
