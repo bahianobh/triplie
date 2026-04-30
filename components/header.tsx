@@ -97,7 +97,7 @@ export function Header() {
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
-                    href={link.href}
+                href={link.href}
                     className="text-[#1B3C87] font-medium hover:text-[#F47920] transition-colors py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >

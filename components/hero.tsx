@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Plane, MapPin, Calendar } from "lucide-react"
 
@@ -46,11 +47,14 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button 
+          asChild
               size="lg"
               className="bg-[#F47920] hover:bg-[#d96810] text-white font-semibold px-8 py-6 rounded-full text-lg transition-all hover:scale-105 shadow-lg"
             >
-              <Plane className="mr-2 h-5 w-5" />
-              Explorar Destinos
+          <Link href="/destinos">
+            <Plane className="mr-2 h-5 w-5" />
+            Explorar Destinos
+          </Link>
             </Button>
             <Button 
               size="lg"

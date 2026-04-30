@@ -147,14 +147,3 @@ export default function DestinosPage() {
                       Ver detalhes
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                     </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  )
-}
