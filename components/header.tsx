@@ -41,7 +41,7 @@ export function Header() {
       {/* Main navigation */}
       <nav className="bg-white shadow-md">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
@@ -49,7 +49,7 @@ export function Header() {
                 alt="Tripliê - Agência de Turismo"
                 width={440}
                 height={160}
-                className="h-20 w-auto"
+                className="h-24 w-auto"
                 priority
               />
             </Link>
