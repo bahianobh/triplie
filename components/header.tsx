@@ -2,12 +2,15 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Menu, X, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHomePage = pathname === '/'
 
   const navLinks = [
     { href: "#inicio", label: "Início" },
@@ -59,7 +62,7 @@ export function Header() {
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={isHomePage ? link.href : `/${link.href}`}
                   className="text-[#1B3C87] font-medium hover:text-[#F47920] transition-colors relative group"
                 >
                   {link.label}
@@ -97,7 +100,7 @@ export function Header() {
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
-                href={link.href}
+                    href={isHomePage ? link.href : `/${link.href}`}
                     className="text-[#1B3C87] font-medium hover:text-[#F47920] transition-colors py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >

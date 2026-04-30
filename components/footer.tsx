@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react"
 
 const quickLinks = [
@@ -19,6 +20,9 @@ const services = [
 ]
 
 export function Footer() {
+  const pathname = usePathname()
+  const isHomePage = pathname === '/'
+
   return (
     <footer id="contato" className="bg-[#1B3C87] text-white">
       {/* Main footer */}
@@ -62,8 +66,8 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
+                  <Link 
+                    href={isHomePage ? link.href : `/${link.href}`}
                     className="text-white/70 hover:text-[#F5D547] transition-colors"
                   >
                     {link.label}
