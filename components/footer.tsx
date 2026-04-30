@@ -92,8 +92,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#F47920] flex-shrink-0 mt-0.5" />
                 <span className="text-white/70">
-                  Av. Paulista, 1000 - Sala 101<br />
-                  Bela Vista, São Paulo - SP
+                  Rua Faisão, 1015<br />
+                  Flávio Marques Lisboa, Belo Horizonte - MG
                 </span>
               </li>
               <li className="flex items-center gap-3">
