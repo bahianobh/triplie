@@ -62,7 +62,7 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-white/70 hover:text-[#F5D547] transition-colors"
                   >
