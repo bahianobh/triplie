@@ -93,7 +93,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-[#F47920] flex-shrink-0 mt-0.5" />
                 <span className="text-white/70">
                   Rua Faisão, 1015<br />
-                  Flávio Marques Lisboa, Belo Horizonte - MG
+                  Flávio Marques Lisboa, BH - MG
                 </span>
               </li>
               <li className="flex items-center gap-3">
