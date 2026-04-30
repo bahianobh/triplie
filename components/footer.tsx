@@ -95,8 +95,6 @@ export function Footer() {
                   Rua Faisão, 1015<br />
                   Flávio Marques Lisboa, Belo Horizonte - MG
                 </span>
->>>>>>> 6b69d5230f36757716b73849b434d44b99088568
-                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#F47920] flex-shrink-0" />
